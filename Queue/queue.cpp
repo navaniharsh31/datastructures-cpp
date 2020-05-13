@@ -16,7 +16,6 @@ class Queue{
         }
         void enqueue();
         void dequeue();
-        void search();
         void display();
 };
 
@@ -58,8 +57,7 @@ int main(){
     do{
         cout<<"\n\n1. Enqueue";
         cout<<"\n2. Dequeue";
-        cout<<"\n3. Search";
-        cout<<"\n4. Display";
+        cout<<"\n3. Display";
         cout<<"\n\nEnter your choice: ";
         cin>>option;
 
@@ -72,14 +70,12 @@ int main(){
                 q->dequeue();
                 break;
             case 3:
-                break;
-            case 4:
                 q->display();
                 break;
         
         default:
             break;
         }
-    }while(option!=5);
+    }while(option!=4);
     return 0;
 }
